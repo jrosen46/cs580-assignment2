@@ -1,0 +1,27 @@
+<launch>
+    <node
+        pkg="turtlesim"
+        type="turtlesim_node"
+        name="turtlesim"
+    />
+    <node
+        pkg="RosenbergJ"
+        type="spawn_init_hunter_node.py"
+        name="spawn_init_hunter"
+    />
+    <node
+        pkg="RosenbergJ"
+        type="run_ctrl_node.py"
+        name="run_ctrl"
+    />
+    <node
+        pkg="RosenbergJ"
+        type="hunt_ctrl_node.py"
+        name="hunt_ctrl"
+    />
+    <node
+        pkg="RosenbergJ"
+        type="distance_enforcer_node.py"
+        name="distance_enforcer"
+    />
+</launch>
